@@ -13,6 +13,7 @@
 
 
 function Header() {
+
     let menuDiv = document.createElement('div');
     let date = document.createElement('span');
     let header = document.createElement('h1');

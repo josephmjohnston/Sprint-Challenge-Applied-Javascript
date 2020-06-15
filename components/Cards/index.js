@@ -28,11 +28,13 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
         console.log(axiosDataCards.data)
         cardMaker(axiosDataCards.data.articles)
 })
+
 .catch((err) => {
     console.log('error', err)
 })
 
 function cardMaker(obj) {
+
     for(let key in obj) {
         obj[key].forEach((article) => {
             cardsContainer.appendChild(createArticle(article))
@@ -67,5 +69,4 @@ function createArticle(data){
     author.appendChild(span);
 
     return cardDiv;
-
 };

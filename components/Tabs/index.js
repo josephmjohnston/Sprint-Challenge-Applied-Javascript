@@ -7,9 +7,7 @@
 //
 //  Each tab should look like this:
 //    <div class="tab">topic here</div>
-lkajsdfkj
-laskfjdlkjasdflkjlal
-aslfkjlasjf
+
 
 let topics = document.querySelector('.topics');
 
@@ -28,10 +26,8 @@ axios.get('https://lambda-times-backend.herokuapp.com/topics')
 function tab(array){
 
 let tab = document.createElement('div');
-
 tab.classList.add('tab');
-
 tab.textContent = array;
-
 return tab;
+
 }
